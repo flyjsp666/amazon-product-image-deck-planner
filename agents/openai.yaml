@@ -1,0 +1,4 @@
+interface:
+  display_name: "Amazon Product Image Deck Planner"
+  short_description: "Plan and approval-gate Amazon lifestyle image generation"
+  default_prompt: "使用 $amazon-product-image-deck-planner 根据这 1-3 张产品图规划 5 张亚马逊生活方式图片方案。"
