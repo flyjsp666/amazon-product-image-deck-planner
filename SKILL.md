@@ -132,6 +132,20 @@ Preserve the required output sizes:
 - Images 1-3: 1800 x 1800 px
 - Images 4-5: 1464 x 600 px
 
+## Post-Generation Size Verification and Resampling
+
+After each image is generated, inspect the actual pixel size before presenting it as final.
+
+If Images 1-3 are not exactly 1800 x 1800 px, upscale or resample each image to exactly 1800 x 1800 px before final delivery.
+
+If Images 4-5 are not exactly 1464 x 600 px, resize, crop, pad, or resample each image to exactly 1464 x 600 px before final delivery.
+
+Use high-quality resampling. Preserve the product, main composition, and readable visual details as much as possible.
+
+Do not report an image as complete until its final file has been verified at the required pixel size.
+
+In the final Chinese response, state the verified final pixel size for each delivered image.
+
 ## Caption Requirements
 
 For each image, write one caption.
@@ -260,6 +274,7 @@ For Stage 1 planning, respond in the following structure only.
 - 后两张图片是横图
 - 前三张图片都注明 1800 x 1800 px
 - 后两张图片都注明 1464 x 600 px
+- 生图完成后必须检查实际像素，不符合要求时必须放大、裁切、补边或重采样到指定尺寸
 - 没有任何方案是拼图、蒙太奇、分屏、三联画、堆叠布局、联系表、多面板构图或组合图片
 - 每个计划输出都是一张独立的生活方式照片
 - 五段提示词都以 "MAXIMUM HIGH QUALITY" 结尾
